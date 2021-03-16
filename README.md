@@ -1,2 +1,2 @@
-# Aulas-de-Problemas-de-programa-o
+# Aulas-de-Lab/prob-de-programacao
 Basic Projects
