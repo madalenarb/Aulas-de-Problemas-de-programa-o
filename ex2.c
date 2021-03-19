@@ -35,7 +35,7 @@ int main(){
         tempo = tempo1 - tempo2;
         hora = tempo/3600;
         min = (tempo - (hora * 3600))/60;
-        seg = (tempo - min * 60);
+        seg = (tempo - min * 60 - hora*3600);
         printf("O resultado é: %d %d %d", hora, min, seg);
         
     } else if (hora1 > 23 && hora2 > 23){
