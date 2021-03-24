@@ -6,7 +6,8 @@ int main() {
     do
     {
         printf("Introduza um número entre 1 e 12, correspondendo a um mês do ano: ");
-        scanf("%d", &n);
+        if(scanf("%d", &n) < 1)
+                return EXIT_FAILURE;
 
         switch(n)
         {
@@ -52,5 +53,5 @@ int main() {
         } 
     } while ( n >= 1 && n <= 12 );
     
-    return 0;
+    return EXIT_SUCCESS;
 }

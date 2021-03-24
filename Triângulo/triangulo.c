@@ -5,27 +5,28 @@ int main (){
     int h, i, v;
 
     printf("Insira a altura do triângulo: ");
-    scanf("%d", &h);
-    printf("Eis o triângulo: \n\n");
-    int b = 2 * h - 1;
-    int c = (h + 1) / 2;
+    if(scanf("%d", &h) < 1)
+        return EXIT_FAILURE;
 
-    for ( i = 0; i <= c; i++)
+    printf("Eis o triângulo: \n\n");
+
+    for ( i = 1; i <= h; i++)
     {
-        for (v = 0; v <= i; v++)
+        for (v = 1; v <= i; v++)
         {
             printf("*");
         }
         printf("\n");
     }
 
-    for ( i = c - 1 ; i >= 0; i--)
+    for ( i = h - 1 ; i >= 1; i--)
     {
-        for (v = 0; v <= i; v++)
+        for (v = 1; v <= i; v++)
         {
             printf("*");
         }
         printf("\n");
     }
     printf("\n\n");
+    return EXIT_SUCCESS;
 }
